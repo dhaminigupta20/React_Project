@@ -1,0 +1,282 @@
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.main {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight:normal;
+}
+
+.search-bar {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.Icones {
+margin-inline: 0 7px;
+justify-content: space-between;
+}
+
+
+.search-bar input {
+  border: none;
+  outline: none;
+  /* margin-left: 5px; */
+}
+
+.notifications {
+  position: relative;
+}
+
+.notifications .fa-bell {
+  cursor: pointer;
+}
+
+.notifications ul {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  list-style: none;
+  padding: 10px;
+  display: none;
+}
+
+.notifications:hover ul {
+  display: block;
+}
+
+.notifications ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.notifications ul li:last-child {
+  margin-bottom: 0;
+}
+
+.notifications ul li .time {
+  color: #888;
+}
+
+.content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-list-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user-list-actions .fa-plus, .fa-minus, .fa-arrow-up, .fa-arrow-down {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #fff;
+  color: #e0dede;
+  padding: 10px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+
+.status .fa-dot-circle {
+  margin-right: 5px;
+}
+
+.status .in-progress {
+  color: orange;
+}
+
+.status .complete {
+  color: green;
+}
+
+.status .pending {
+  color: yellow;
+}
+
+.status .approved {
+  color: blue;
+}
+
+.status .rejected {
+  color: red;
+}
+
+.status .call {
+  color: purple;
+}
+
+.status .schedule {
+  color: teal;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination button:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+
+.sidebar1 {
+  width: 250px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.sidebar1 h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.sidebar1 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar1 li {
+  margin-bottom: 10px;
+}
+
+.top-bar {
+  background-color: #040404;
+  color: #fff;
+  padding: 20px;
+  text-align:left;
+}
+
+.icon-container {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.icon-container svg {
+  font-size: 16px;
+  color: #fff;
+}
+
+.search-bar {
+  display: block;
+  margin: 0;
+ right: 80%;
+}
+
+.search-bar input[type="text"] {
+  /* padding: 10px; */
+  border: none;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.user-list {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bottom-bar {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}

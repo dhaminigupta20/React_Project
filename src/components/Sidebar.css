@@ -1,0 +1,300 @@
+
+
+
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar-header img {
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.sidebar-header span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar-nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-nav li {
+  padding: 10px;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+.sidebar-nav li a {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.arrow-icon {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.nested-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.nested-list span {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+  padding: 10px 20px;
+}
+
+.nested-list li {
+  padding: 10px 20px;
+  /* border-bottom: 1px solid #ddd; */
+  cursor: pointer;
+  border-bottom: none;
+}
+
+.nested-list li a {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.sidebar-nav li:hover {
+  background-color: #f4f2f7;
+  cursor: pointer;
+}
+
+.sidebar-nav li.active {
+  background-color: #f4f2f7;
+}
+
+
+.sidebar-title {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.main {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  margin-left: 5px;
+}
+
+.notifications {
+  position: relative;
+}
+
+.notifications .fa-bell {
+  cursor: pointer;
+}
+
+.notifications ul {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  list-style: none;
+  padding: 10px;
+  display: none;
+}
+
+.notifications:hover ul {
+  display: block;
+}
+
+.notifications ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.notifications ul li:last-child {
+  margin-bottom: 0;
+}
+
+.notifications ul li .time {
+  color: #888;
+}
+
+.content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-list-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user-list-actions .fa-plus, .fa-minus, .fa-arrow-up, .fa-arrow-down {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #eff2f5;
+  color: #0e0d0d;
+  padding: 10px;
+  cursor: pointer;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+}
+
+.status .fa-dot-circle {
+  margin-right: 5px;
+}
+
+.status .in-progress {
+  color: orange;
+}
+
+.status .complete {
+  color: green;
+}
+
+.status .pending {
+  color: yellow;
+}
+
+.status .approved {
+  color: blue;
+}
+
+.status .rejected {
+  color: red;
+}
+
+.status .call {
+  color: purple;
+}
+
+.status .schedule {
+  color: teal;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+}
+
+.pagination button:hover {
+  background-color: #f0f0f0;
+}
+
+.pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+
